@@ -40,6 +40,7 @@ server.use(express.static('./public'));
 // controllers
 require('./app/controllers/home')(server);
 require('./app/controllers/user')(server);
+require('./app/controllers/discuss')(server);
 
 //connections
 
