@@ -15,7 +15,7 @@ var homeController = function (server){
 					var url_foto = req.user.photos[0].value;
 				}
 				res.render("home/index",{
-					name : name,
+					user : name,
 					url_foto : url_foto
 				});
 			}

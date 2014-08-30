@@ -11,7 +11,7 @@ var facebookConection = function (server){
 	}));
 	server.get('/auth/facebook', passport.authenticate('facebook'));
 
-	server.get('/auth/facebook/callback', passport.authenticate('facebook', {successRedirect : '/', 
+	server.get('/auth/facebook/callback', passport.authenticate('facebook', {successRedirect : '/extra-data', 
 															failureRedirect : '/error'}));
 };
 
